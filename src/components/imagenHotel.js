@@ -41,7 +41,7 @@ const ImagenHotel = () => {
           image:file(relativePath:{eq:"8.jpg"}){
               sharp:childImageSharp{
                   fluid{
-                      srcSetWebp
+                      ...GatsbyImageSharpFluid_withWebp
                   }
               }
           }
